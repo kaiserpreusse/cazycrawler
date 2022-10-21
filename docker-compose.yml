@@ -1,0 +1,9 @@
+version: '3'
+services:
+  cazycrawler:
+    build: .
+    volumes:
+      - ./httpcache:/httpcache
+      - ./output:/output
+    environment:
+      - TARGET=docker
